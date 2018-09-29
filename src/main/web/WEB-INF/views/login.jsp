@@ -1,4 +1,3 @@
-<jsp:useBean id="errorMessage" scope="request" type=""/>
 <html>
 <head>
     <title>Yahoo!!</title>
