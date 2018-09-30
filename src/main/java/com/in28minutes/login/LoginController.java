@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.SessionAttributes;
 
-@SessionAttributes("name")
 @Controller
+@SessionAttributes("name")
 public class LoginController {
 
     @Autowired
@@ -27,7 +27,6 @@ public class LoginController {
             model.put("errorMessage", "Invalid Credentials");
             return "login";
         }
-
         model.put("name", name);
         return "welcome";
     }
