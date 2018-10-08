@@ -9,6 +9,7 @@
 
 	<div class="container">
 		<form:form method="post" commandName="todo">
+			<form:hidden path="id"/>
 			<fieldset class="form-group">
 				<form:label path="desc">Description</form:label>
 				<form:input path="desc" type="text" class="form-control"

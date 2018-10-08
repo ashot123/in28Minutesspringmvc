@@ -2,9 +2,8 @@
 <html>
 <head>
 <title>Todos for ${name}</title>
-
-<link href="webjars/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-
+<link href="webjars/bootstrap/3.3.7/css/bootstrap.min.css"
+	  rel="stylesheet">
 </head>
 <body>
 	<div class="container">
@@ -25,6 +24,8 @@
 						<td>${todo.targetDate}</td>
 						<td>${todo.done}</td>
 						<td>
+							<a type="button" class="btn btn-primary"
+								href="/update-todo?id=${todo.id}">Edit</a>
 							<a type="button" class="btn btn-warning"
 								href="/delete-todo?id=${todo.id}">Delete</a>
 						</td>
