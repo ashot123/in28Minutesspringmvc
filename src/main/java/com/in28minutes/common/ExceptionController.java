@@ -16,6 +16,7 @@ public class ExceptionController {
 
     @ExceptionHandler(value = Exception.class)
     public String handleError(HttpServletRequest req, Exception exception) {
+
         logger.error("Request: " + req.getRequestURL() + " raised " + exception);
         return "error";
     }

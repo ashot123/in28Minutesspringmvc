@@ -4,4 +4,4 @@
 	<spring:message code="welcome.message" /> ${name}.
 </div>
 
-<%@ include file="common/footer.jspf"%>
+<%@ include file="common/footer.jspf"%>╝
